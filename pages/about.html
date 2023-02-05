@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About US</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="icon" href="../logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+          <a href="index.html">
+            <img src="../logo.png" alt="logo">
+          </a>
+          <h5>Saj Box Express</h5>   
+        </div>
+    
+        <div class="spred-links">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+    
+    
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="../index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="menu.html">Menu</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+    
+          <span onclick="openNav()"><i class="fa fa-bars"></i></span>
+    
+        <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+          }
+    
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            document.body.style.backgroundColor = "white";
+          }
+        </script>
+    </header>
+
+    <section class="about" id="about" style="margin-top: 80px;">
+        <div class="about-img">
+            <img src="../img/about.jpg" alt="about-us">
+        </div>
+        <div class="about-text">
+            <h2>Our History</h2>
+            <p>
+                Located in Rehab Mall 1, Saj box is not just known for 
+                the best coffee and wellness of food. It’s considered one
+                of the best relaxing and Entertaiment places. It's perfect cafe
+                for getting work done with a great cup of coffee. Even if you
+                prefer your coffee black, try their non-dairy milk alternatives
+                for a creamy and unique taste.
+            </p>
+            <p>
+                It's perfect cafe for getting work done with a great cup of
+                coffee. Even if you prefer your coffee black, try their non-dairy
+                milk alternatives for a creamy and unique taste. It mainly contain
+                colombian coffee, The dark one is plain and muhaj, Muhaj pillow light
+                Medium, plain and twisted.
+            </p>
+            <p> 
+                Characterized by its homey atmosphere and friendly staff, 
+                Saj box Express has been a rehab landmark. 
+                Their Columbian blend is a crowd favorite, but it’s best 
+                to make use of the helpful baristas who are always ready 
+                to provide their own recommendations.
+            </p>
+
+            <a href="pages/about.html" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="../about/1.jpeg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="../about/2.jpeg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="../about/3.jpeg" style="width:100%">
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+    <!-- footer -->
+    <section class="footer">
+        <div class="footer-box">
+            <h2>Saj Box</h2>
+            <p>
+                Located in Rehab Mall 1, Saj Box is not just for the best 
+                coffee and wellness of food. it’s considered one of the best
+                relaxing and Entertaiment places.
+            </p>
+            <div class="social">
+                <a href="mailto:sbo039945@gmail.com"><i class="bx bxl-gmail"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100088610529569"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/fox_.agency/"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.tiktok.com/@sajbox"><i class="bx bxl-tiktok"></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h3>Support</h3>
+            <li><a href="mailto:sbo039945@gmail.com">Product</a></li>
+            <li><a href="mailto:sbo039945@gmail.com">Help & Support</a></li>
+            <li><a href="mailto:sbo039945@gmail.com">Return Policy</a></li>
+            <li><a href="mailto:sbo039945@gmail.com">Terms of Use</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>View Guides</h3>
+            <li><a href="mailto:sbo039945@gmail.com">Features</a></li>
+            <li><a href="mailto:sbo039945@gmail.com">Careers</a></li>
+            <li><a href="mailto:sbo039945@gmail.com">Blog Posts</a></li>
+            <li><a href="mailto:sbo039945@gmail.com">Our Branches</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <div class="contact">
+                <li><a href="https://www.google.com/maps/place/30%C2%B003'32.5%22N+31%C2%B029'44.8%22E/@30.059037,31.4935863,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xc435e8e51cd1856!8m2!3d30.059037!4d31.495775?hl=en"><i class="bx bxs-map"></i>Rehab Mall 1, Ground floor</li></a>
+                <li><a href="tel:+201000077767"><i class="bx bxs-phone"></i>+20 1000 07767</li></a>
+                <li><a href="mailto:sbo039945@gmail.com"><i class="bx bxs-envelope"></i>SajBox@gmail.com</li></a>
+            </div>
+        </div>
+    </section>
+    <!-- CopyRights -->
+    <div class="copyright">
+        <p>&#169; Saj Box All Right Reversed</p>
+    </div>    
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+    <!-- links -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="icon" href="../logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <header>
+        <div class="title">
+          <a href="index.html">
+            <img src="../logo.png" alt="logo">
+          </a>
+          <h5>Saj Box Express</h5>   
+        </div>
+    
+        <div class="spred-links">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+    
+    
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="../index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="menu.html">Menu</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+    
+          <span onclick="openNav()"><i class="fa fa-bars"></i></span>
+    
+        <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+          }
+    
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            document.body.style.backgroundColor = "white";
+          }
+        </script>
+    </header>
+
+    <div class="contactUs">
+        <div class="tittle">
+            <h2>Get in Touch</h2>
+        </div>
+        <div class="box">
+            <div class="contact form">
+                <h3>Send a Message</h3>
+                <form action="">
+                    <div class="formBox">
+                        <div class="row50">
+                            <div class="inputBox">
+                                <h6>First Name</h6>
+                                <input type="text" placeholder="Example: John">
+                            </div>
+                            <div class="inputBox">
+                                <h6>Last Name</h6>
+                                <input type="text" placeholder="Example: Doe">
+                            </div>
+                        </div>
+
+                        <div class="row50">
+                            <div class="inputBox">
+                                <h6>Email</h6>
+                                <input type="text" placeholder="Example: Johndoe@gmail.com">
+                            </div>
+                            <div class="inputBox">
+                                <h6>Mobile</h6>
+                                <input type="text" placeholder="Example: +20 100 123 1234">
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <h6>Message</h6>
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Write your message here"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <input type="submit" value="Send" name="" id="">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- info Box -->
+            <div class="contact info">
+                <h3>Contact Info</h3>
+                <div class="infoBox">
+                    <ul>
+                        <li><a href="https://www.google.com/maps/place/30%C2%B003'32.5%22N+31%C2%B029'44.8%22E/@30.059037,31.4935863,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xc435e8e51cd1856!8m2!3d30.059037!4d31.495775?hl=en"><i class="bx bxs-map"></i>Rehab Mall 1, Ground floor</li></a>
+                        <li><a href="tel:+201000077767"><i class="bx bxs-phone"></i>+20 1000 07767</a></li>
+                        <li><a href="mailto:sbo039945@gmail.com"><i class="bx bxs-envelope"></i>SajBox@gmail.com</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100088610529569"><i class="bx bxl-facebook"></i>Facebook</a></li>
+                        <li><a href="https://www.instagram.com/fox_.agency/"><i class="bx bxl-instagram"></i>Instagram</a></li>
+                        <li><a href="https://www.tiktok.com/@sajbox"><i class="bx bxl-tiktok"></i>Tiktok</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- map -->
+            <div class="contact map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.2302607148004!2d31.493647315042892!3d30.058933581877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14581888bcb1a625%3A0x5c5c19ea38505cb9!2sRehab%20Mall%201!5e0!3m2!1sen!2seg!4v1675605142245!5m2!1sen!2seg" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <section class="footer">
+        <div class="footer-box">
+            <h2>Saj Box</h2>
+            <p>
+                Located in Rehab Mall 1, Saj Box is not just for the best 
+                coffee and wellness of food. it’s considered one of the best
+                relaxing and Entertaiment places.
+            </p>
+            <div class="social">
+                <a href="mailto:sbo039945@gmail.com"><i class="bx bxl-gmail"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100088610529569"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/fox_.agency/"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.tiktok.com/@sajbox"><i class="bx bxl-tiktok"></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h3>Support</h3>
+            <li><a href="mailto:sbo039945@gmail.com">Product</a></li>
+            <li><a href="mailto:sbo039945@gmail.com">Help & Support</a></li>
+            <li><a href="mailto:sbo039945@gmail.com">Return Policy</a></li>
+            <li><a href="mailto:sbo039945@gmail.com">Terms of Use</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>View Guides</h3>
+            <li><a href="mailto:sbo039945@gmail.com">Features</a></li>
+            <li><a href="mailto:sbo039945@gmail.com">Careers</a></li>
+            <li><a href="mailto:sbo039945@gmail.com">Blog Posts</a></li>
+            <li><a href="mailto:sbo039945@gmail.com">Our Branches</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <div class="contact">
+                <li><a href="https://www.google.com/maps/place/30%C2%B003'32.5%22N+31%C2%B029'44.8%22E/@30.059037,31.4935863,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xc435e8e51cd1856!8m2!3d30.059037!4d31.495775?hl=en"><i class="bx bxs-map"></i>Rehab Mall 1, Ground floor</li></a>
+                <li><a href="tel:+201000077767"><i class="bx bxs-phone"></i>+20 1000 07767</li></a>
+                <li><a href="mailto:sbo039945@gmail.com"><i class="bx bxs-envelope"></i>SajBox@gmail.com</li></a>
+            </div>
+        </div>
+    </section>
+    <!-- CopyRights -->
+    <div class="copyright">
+        <p>&#169; Saj Box All Right Reversed</p>
+    </div>
+</body>
+</html>
